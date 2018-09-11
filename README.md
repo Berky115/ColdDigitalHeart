@@ -1,5 +1,5 @@
 # ColdDigitalHeart
-A React/Redux website. Houses personal blog, links to prior projects and means of contacting.
+A React/Redux website. Houses personal blog, links to prior projects and means of contact.
 
 Technical notes:
 - 
