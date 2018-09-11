@@ -1,0 +1,188 @@
+* {
+    font-family: 'Indie Flower', cursive;
+    padding:0;
+    margin:0;
+    text-decoration: none;
+}
+
+html{
+    font:14px normal Arial, sans-serif;
+}
+
+body{
+    padding:60px;
+    text-align: center;
+}
+
+ul{
+    list-style:none;
+    display: inline-block;
+}
+
+p{
+    padding-top:15px;
+    font-size:12px;
+}
+
+ul li{
+    display: inline-block;
+    padding: 10px 20px;
+    cursor:pointer;
+    background-color:#eee;
+    color:black;
+    transition:0.3s;
+}
+
+ul li:hover{
+    background-color:#ff9999;
+    padding: 10px 120px;
+}
+
+ul li.aboutMe{
+    font-size: 12px;
+    display: block;
+    background-color:#eee;
+    color:#fff;
+  
+    text-decoration: none;
+    text-align:center;
+}
+
+
+ul li.aboutMe:hover{
+  font-size: 24px;
+  display: block;
+  background-color:#e60000;
+  color:fff;
+  text-decoration: none;
+    text-align:center;
+}
+
+ul li.project{
+    display: block;
+    background-color:#eee;
+    color:#fff;
+    transition:0.3s;
+}
+
+ul li.project h1{
+    display: block;
+    padding: 10px 20px;
+    cursor:pointer;
+    background-color:#eee;
+    color:#fff;
+    transition:0.3s;
+}
+
+ul li.project:hover{
+    background-color:#e60000;
+    color:fff;
+     text-decoration: none;
+}
+
+ul li.project:hover h1{
+    background-color:#e60000;
+    color:fff;
+    text-decoration: none;
+}
+
+.active li{
+    background-color:#e60000;
+    color:white;
+}
+
+.active li:hover{
+    background-color:#e60000;
+    color:white;
+}
+
+ul.header {
+  background-color: #111;
+  font-weight: bold;
+  font-size: 28px;
+}
+
+ul.header li a {
+  color: #FFF;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+}
+
+.heartStyle{
+    width:2.5em;
+    height:2.5em
+}
+
+.contactNode {
+    width:50px;
+    height:50px;
+}
+
+ul li.blogEntry {
+
+  margin: 0 0 25px 0;
+  border-radius: 15px;
+  display: block;
+  padding: 10px 20px;
+  max-width: 1080px;
+  cursor:pointer;
+  background-color:#eee;
+  color:black;
+  transition:0.3s;
+}
+
+ul li.halloweenEntry {
+  margin: 0 0 25px 0;
+  border-radius: 15px;
+  display: block;
+  padding: 10px 20px;
+  max-width: 1080px;
+  cursor:pointer;
+  background-color:#eee;
+  color:black;
+  transition:0.3s;
+}
+
+ul li.halloweenEntry:hover {
+  margin: 0 0 25px 0;
+  border-radius: 15px;
+  display: block;
+  padding: 10px 20px;
+  max-width: 1080px;
+  cursor:pointer;
+  background-color:black;
+  color:orange;
+  transition:0.3s;
+}
+
+.blogTitle {
+  font-weight: bold;
+  font-size: 28px;
+}
+
+.blogText {
+  text-align: left;
+  font-size: 24px;
+  font-family: 'Coming Soon', cursive;
+}
+
+.halloweenText {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Coming Soon', cursive;
+}
+
+.comicImage {
+  max-width: 100%;
+     height: auto;
+     width: auto\9; /* ie8 */
+}
+
+.obama {
+   padding:5px;
+   border:5px solid blue;
+   background-color:red;
+    border-radius: 25px;
+}
