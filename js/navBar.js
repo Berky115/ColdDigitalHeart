@@ -110,7 +110,7 @@ let Menu = React.createClass({
         return (
           <div>
                 <ul className = "header" >
-                    <IndexLink activeClassName="active" to="/"><li> ♥ </li></IndexLink>
+                    <IndexLink activeClassName="active" to="/"><li> Home </li></IndexLink>
                     <Link activeClassName="active" to="/Blog"><li> Blog </li></Link>
                     <Link activeClassName="active" to="/Projects"><li> Projects </li></Link>
                     <Link activeClassName="active" to="/About"><li> About </li></Link>

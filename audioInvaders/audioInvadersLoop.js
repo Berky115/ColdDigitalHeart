@@ -88,7 +88,7 @@ function init() {
 }
 
 function drawDebugMouse(currentXPosition, currentYPosition) {
-    canvasObject.fillStyle =  "#111111"
+    canvasObject.fillStyle =  "#111111";
     canvasObject.fillRect(currentXPosition, currentYPosition, 5, 5);
 }
 

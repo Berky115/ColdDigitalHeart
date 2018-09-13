@@ -1,6 +1,10 @@
 blogData = {
 	"postsArray": [
 		{
+			"postTitle" : "Three cheers for Pyglet",
+			"postText" : ["I recently ran into an interesting design exercise thanks to discord and my love of video games.", "For the un-initiated. Devil May Cry (DMC) is a game series known for action, brazen characters, and a cruel yet fair style tracking system. The game capitalizes on grading the player. The better one plays DMC overtime, be it by stacking combos, collecting items quickly or performing complicated actions, the more bonuses they are rewarded with and the high grade or rank they are granted. This led me to wonder how one would go ahead and implement such a system.",  "So I did it with Python!", "In time I started looking to take it out of the terminal. While Python has plenty of great libs to work with to make this happen. I ended up with a little used but very well-loved library called Pyglet.", "Pyglet is a simple audio/visual framework built with the express purpose of making games in Python. It specializes in providing basic functionality, with very little overhead or magic happening behind the scenes.", "The library is OS agnostic. Capable of building in Windows, OS X and Linux. Maintained with care and well documented, it offers everything one needs to get started developing. The philosophy reminds me of Flask in that way. Intentionally non-intrusive, and very powerful when called upon.", "To summarize, Pyglet has my seal of approval. If you would like to find out more about the library then head over to the official wiki - https://bitbucket.org/pyglet/pyglet/wiki/Home", "if you want to keep an eye on my StyleRank exercise, I've pushed the code to Github for the world to see at - https://github.com/Berky115/StyleRanking"]
+		},
+		{
 				"postTitle": "Website update",
 				"postText": [" Patch notes..." , " * Fixed invader glitches when rendering nav page. " , " * Removed unwanted behavior on about page. " , " * Removed outdated assets"]
 	},

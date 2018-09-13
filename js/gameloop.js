@@ -1,11 +1,10 @@
-function GameSettings(numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed, BGMusic) {
+function GameSettings(numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed) {
     this.numberOfInvaders = numberOfInvaders;
     this.minInvaderSize = minInvaderSize;
     this.maxInvaderSize = maxInvaderSize;
     this.minSpeed = minSpeed;
     this.maxSpeed = maxSpeed;
-    this.BGMusic = BGMusic;
-};
+}
 
 function Invader (speed, radius, positionX, positionY, noteColor) {
     this.speed = speed;
@@ -27,13 +26,6 @@ function drawInvader(invader) {
 function EnemyBody(x, y, r) {
     canvasObject.beginPath();
     canvasObject.arc(x, y, r, 0, Math.PI * 2, true);
-    canvasObject.fill();
-};
-
-function rect(x, y, w, h) {
-    letObject.beginPath();
-    canvasObject.rect(x, y, w, h);
-    canvasObject.closePath();
     canvasObject.fill();
 };
 
@@ -59,7 +51,12 @@ var initGame = function() {
 
 function drawInvaders() {
   for (var i = 0; i < gameSettings.numberOfInvaders; i++) {
-      enemies[i]=new Invader(randomNumber(gameSettings.minSpeed, gameSettings.maxSpeed), randomNumber(gameSettings.minInvaderSize, gameSettings.maxInvaderSize), randomNumber(WIDTH, WIDTH + 20) , randomNumber(gameSettings.maxInvaderSize, HEIGHT - 35 ), colors[randomNumber(0, colors.length)]);
+      enemies[i]= new Invader(
+          randomNumber(gameSettings.minSpeed, gameSettings.maxSpeed),
+          randomNumber(gameSettings.minInvaderSize, gameSettings.maxInvaderSize),
+          randomNumber(WIDTH, WIDTH + 20) ,
+          randomNumber(gameSettings.maxInvaderSize, HEIGHT - 35 ),
+          colors[randomNumber(0, colors.length)]);
   }
 };
 
@@ -84,18 +81,19 @@ function resetEnemy(invader) {
     return invader;
 };
 
-var canvas;
-//numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed, BGMusic
-var gameSettings = new GameSettings(5, 10, 15, 1, 4, "");
-var WIDTH = window.innerWidth;
-var HEIGHT = 100;
 
-var colors = [
+//numberOfInvaders, minInvaderSize, maxInvaderSize, minSpeed, maxSpeed, BGMusic
+const gameSettings = new GameSettings(5, 10, 15, 1, 4);
+const WIDTH = window.innerWidth;
+const HEIGHT = 100;
+let canvas;
+
+const colors = [
     "red",
     "#aaa",
     "black"
 ];
 
-var enemies = [gameSettings.numberOfInvaders];
+const enemies = [gameSettings.numberOfInvaders];
 setInterval(draw, 16.67); //approx 60 fps
 window.onload = initGame;
